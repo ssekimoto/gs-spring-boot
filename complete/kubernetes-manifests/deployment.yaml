@@ -1,24 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pets-deployment
-  labels:
-    app: pets
+  name: spring-app-deployment
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
-      app: pets
+      app: spring-app
   template:
     metadata:
       labels:
-        app: pets
+        app: spring-app
     spec:
       containers:
-      - name: pets
-        image: pets
+      - name: spring-app
+        image: spring-app
         ports:
-        - containerPort: 5000
-        env:
-        - name: FLASK_ENV
-          value: production
+        - containerPort: 8080
