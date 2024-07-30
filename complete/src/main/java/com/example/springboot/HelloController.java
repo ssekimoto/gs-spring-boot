@@ -17,7 +17,6 @@ public class HelloController {
     private Map<String, String> database = new HashMap<>();
 
     public HelloController() {
-        // 初期データ
         database.put("greeting", "Hello, welcome to Google Cloud Next Tokyo 24!");
     }
 
