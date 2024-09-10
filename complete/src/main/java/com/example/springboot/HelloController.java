@@ -31,12 +31,12 @@ public class HelloController {
 
     @GetMapping("/")
     public String index() {
-        return generateHtml("Google Cloud Next Tokyo 24", database.get("greeting"), "More Info", "/api/info");
+        return generateHtml("Platform Engineering Handson 2024", database.get("greeting"), "More Info", "/api/info");
     }
 
     @GetMapping("/api/info")
     public String info() {
-        return generateHtml("Information Page", "This is a sample application for the Google Cloud Next Tokyo 24 event.", "Go Back", "/");
+        return generateHtml("Information Page", "This is a sample application for Platform Engineering Handson 2024.", "Go Back", "/");
     }
 
     @GetMapping("/api/external")
