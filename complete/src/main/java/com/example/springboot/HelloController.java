@@ -17,7 +17,7 @@ public class HelloController {
     private Map<String, String> database = new HashMap<>();
 
     public HelloController() {
-        database.put("greeting", "Hello, welcome to Google Cloud Next Tokyo 24!");
+        database.put("greeting", "Hello, welcome to handson 2024");
     }
 
     private String generateHtml(String title, String content, String linkText, String linkHref) {
